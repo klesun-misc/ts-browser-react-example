@@ -1,0 +1,15 @@
+<html>
+<body>
+<div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://klesun-misc.github.io/TypeScript/lib/typescriptServices.js"></script>
+<script type="module">
+    //import {loadModule} from 'https://klesun.github.io/ts-browser/src/ts-browser.js';
+    import {loadModule} from '../../entry/ts-browser/src/ts-browser.js';
+    loadModule('./app.tsx', {
+        jsx: ts.JsxEmit.React,
+    });
+</script>
+</body>
+</html>
